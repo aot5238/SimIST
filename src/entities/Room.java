@@ -58,6 +58,7 @@ public class Room extends JPanel implements ActionListener, KeyListener{
             Desk newDesk5 = new Desk(50, 50,100, 330, "Desk5");
             Desk newDesk6 = new Desk(50, 50,100, 400, "Desk6");
             Desk newDesk7 = new Desk(50, 50,100, 5470, "Desk7");
+            
             Desk newRowDesk = new Desk(50, 50,300, 50, "Desk1");
             Desk newRowDesk2 = new Desk(50, 50,300, 120, "Desk2");
             Desk newRowDesk3 = new Desk(50, 50,300, 190, "Desk3");
@@ -65,6 +66,7 @@ public class Room extends JPanel implements ActionListener, KeyListener{
             Desk newRowDesk5 = new Desk(50, 50,300, 330, "Desk5");
             Desk newRowDesk6 = new Desk(50, 50,300, 400, "Desk6");
             Desk newRowDesk7 = new Desk(50, 50,300, 5470, "Desk7");
+            
             desks.add(newDesk);
             desks.add(newDesk2);  
             desks.add(newDesk3);  
@@ -72,6 +74,7 @@ public class Room extends JPanel implements ActionListener, KeyListener{
             desks.add(newDesk5);
             desks.add(newDesk6);  
             desks.add(newDesk7);
+            
             desks.add(newRowDesk);
             desks.add(newRowDesk2);  
             desks.add(newRowDesk3);  
@@ -310,14 +313,14 @@ class Player extends Rectangle{
  *
  * @author Graham
  */
-//class GameFrame extends JFrame{
-//    
-//    public GameFrame(Room theRoom){
-//        this.setSize(new Dimension(500, 500));
-//        //this.add(theRoom);
-//        this.validate();
-//        this.setVisible(true);
-//        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-//        this.setLocationRelativeTo(null);
-//    }
-//}
+class GameFrame extends JFrame{
+    
+    public GameFrame(Room theRoom){
+        this.setSize(new Dimension(500, 500));
+        this.add(theRoom);
+        this.validate();
+        this.setVisible(true);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setLocationRelativeTo(null);
+    }
+}
