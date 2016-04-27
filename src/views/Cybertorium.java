@@ -1,6 +1,7 @@
 package views;
 
 
+import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import javax.swing.ImageIcon;
@@ -15,11 +16,13 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author aot5238
+ * @author aot5238, lmo5113
  */
 public class Cybertorium extends JPanel
 {
     JButton table1, table2, table3, table4, table5, seatButton;
+    private Object characterMovement;
+    private Object student;
     
     public Cybertorium()
     {
@@ -36,7 +39,7 @@ public class Cybertorium extends JPanel
         add(table3);
         add(table4);
         add(table5);
-        add(seatButton);
+        Component add = add(seatButton);
         
         table1.setOpaque(false);
         table1.setContentAreaFilled(false);
@@ -63,6 +66,7 @@ public class Cybertorium extends JPanel
         table4.setBounds(new Rectangle (90, 335, 805, 5));
         table5.setBounds(new Rectangle (90, 410, 805, 15));
         seatButton.setBounds(new Rectangle(90, 92, 805, 5));
+        
     }
     @Override
     public void paintComponent(Graphics g)
@@ -71,5 +75,6 @@ public class Cybertorium extends JPanel
         ImageIcon Icon = new ImageIcon("cybertorium.jpg");
         g.drawImage(Icon.getImage(), 0, 0, this);
         
+
     }
 }
