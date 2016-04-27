@@ -19,7 +19,7 @@ import javax.swing.JPanel;
  */
 public class Cybertorium extends JPanel
 {
-    JButton table1, table2, table3, table4, table5;
+    JButton table1, table2, table3, table4, table5, seatButton;
     
     public Cybertorium()
     {
@@ -28,12 +28,15 @@ public class Cybertorium extends JPanel
         table3 = new JButton();
         table4 = new JButton();
         table5 = new JButton();
+        seatButton = new JButton(); 
+        
         
         add(table1);
         add(table2);
         add(table3);
         add(table4);
         add(table5);
+        add(seatButton);
         
         table1.setOpaque(false);
         table1.setContentAreaFilled(false);
@@ -50,13 +53,18 @@ public class Cybertorium extends JPanel
         table5.setOpaque(false);
         table5.setContentAreaFilled(false);
         table5.setBorderPainted(false);
+        seatButton.setOpaque(false);
+        seatButton.setContentAreaFilled(false);
+        seatButton.setBorderPainted(false);
         
         table1.setBounds(new Rectangle (90, 92, 805, 10));
         table2.setBounds(new Rectangle (90, 182, 805, 5));
         table3.setBounds(new Rectangle (90, 255, 805, 5));
         table4.setBounds(new Rectangle (90, 335, 805, 5));
         table5.setBounds(new Rectangle (90, 410, 805, 15));
+        seatButton.setBounds(new Rectangle(90, 92, 805, 5));
     }
+    @Override
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
