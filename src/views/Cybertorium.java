@@ -39,7 +39,7 @@ public class Cybertorium extends JPanel
         add(table3);
         add(table4);
         add(table5);
-        Component add = add(seatButton);
+        add(seatButton);
         
         table1.setOpaque(false);
         table1.setContentAreaFilled(false);
