@@ -13,16 +13,16 @@ import  javax.swing.*;
  * @author matthewtucker
  */
 public class GameFrame extends JFrame {
-    //private Floor floor1;
+    Cybertorium floor1;
     
 
     public GameFrame(String title) {
-        //floor1 = new Floor("Floor 1");
+        floor1 = new Cybertorium();
     
         this.setTitle(title);
         this.setVisible(true);
-        this.setSize(new Dimension(500, 500));
-        //this.add(floor1);
+        this.setSize(new Dimension(975, 580));
+        this.add(floor1);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
     
