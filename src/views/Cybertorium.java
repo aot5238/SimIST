@@ -58,16 +58,16 @@ public class Cybertorium extends JPanel implements ActionListener
         table5.setOpaque(false);
         table5.setContentAreaFilled(false);
         table5.setBorderPainted(false);
-//        seatButton.setOpaque(false);
-//        seatButton.setContentAreaFilled(false);
-//        seatButton.setBorderPainted(false);
+        seatButton.setOpaque(true);
+        seatButton.setContentAreaFilled(true);
+        seatButton.setBorderPainted(true);
         
         table1.setBounds(new Rectangle (92, 145, 800, 10));
         table2.setBounds(new Rectangle (90, 220, 800, 10));
         table3.setBounds(new Rectangle (90, 294, 800, 10));
         table4.setBounds(new Rectangle (90, 365, 800, 10));
         table5.setBounds(new Rectangle (90, 440, 800, 10));
-        seatButton.setBounds(new Rectangle(94, 157, 45, 45));
+        seatButton.setBounds(new Rectangle(95, 160, 45, 65));
         
         seatButton.addActionListener(this);
         
